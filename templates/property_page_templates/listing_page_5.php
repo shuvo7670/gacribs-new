@@ -46,6 +46,9 @@ $guest_list= wpestate_get_guest_dropdown('noany');
 
 <div class="row row content-fixed-listing listing_type_5">
 
+    <?php echo do_shortcode('[better_messages_pm_button user_id="1"]'); ?>
+
+    <?php //Better_Messages()->functions->messages_with_user( $post->post_author ); ?>
     <?php 
     include(locate_template('templates/property_page_templates/property_page_templates_section/title_section_type_v1.php'));
     include(locate_template('templates/property_page_templates/property_page_templates_section/property_media_section.php'));
